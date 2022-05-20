@@ -1,0 +1,69 @@
+what is node Js?:
+    back-end
+    routes/events
+    isn't a programmer language. (it's a plataform)
+
+What is NPM/YARN?
+    are packages mannager
+    build own packages
+    YARN is a little more fast than npm
+
+NodeJS's features
+    Architerure on Event-loop
+        call Stack.
+    Simple tread
+    Non-Blocking I/O.
+
+
+what is a REST API
+    API REST:
+        flow: require, response
+        Frontend: receive the data and work with it
+        Response: through a data structure
+
+routes
+    // GET http://minhaapi.com/usuarios
+    // POST http://minhaapi.com/usuarios
+    // PUT http://minhaapi.com/usuarios/1
+    // DELETE http://minhaapi.com/usuarios/1
+
+benefits to work with routes
+    A lot of clientes (front-end)
+    Communication standard(web,mobile,desktop)
+
+JSON (JavaScript object Notation)
+    {
+        "user"{
+            "name":"Programmer",
+            "email": "Programmer@email.com",
+            "gender": "male"
+        }
+    }
+
+require
+GET http://minhaapi.com/usuarios will return a json of the users's data
+GET http://minhaapi.com/usuarios/1 will return a json with the data's of the user with id 1
+
+POST http://minhaapi.com/usuarios
+    will send a request body to our API
+    example of a request body
+    {
+        "name":"matheus",
+        "email":"Matheus.lima@eu.com"
+        "gender":"male"
+    }
+
+HTTP Codes
+    1xx : Information
+    2XX : Sucess
+        200: Sucess
+        201: Created
+    3xx: Redirection
+        301: Moved Permanently
+        302: Moved
+    4XX: Client Error
+        400: Bad request
+        401: Unauthorized
+        404: Not found
+    5xx: Server Error
+        500:Server Error
